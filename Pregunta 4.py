@@ -7,7 +7,7 @@ class Barras(object):
         else:return "Error"
     def barras_aux(self,lista,fila,col,matriz):
         if fila==len(lista):
-            return result
+            return matriz
         elif col==len(matriz[0]):
             return self.barras_aux(lista,fila+1,0,matriz)
         elif col<len(matriz[0]):
